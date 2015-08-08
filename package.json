@@ -1,0 +1,32 @@
+{
+  "name": "reflow",
+  "version": "0.1.0",
+  "description": "node.js tool sets",
+  "main": "package.json",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimzhan/reflow.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "library"
+  ],
+  "author": "Jim Zhan <jim.zhan@me.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jimzhan/reflow/issues"
+  },
+  "homepage": "https://github.com/jimzhan/reflow#readme",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "gulp": "*",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "whatwg-fetch": "*"
+  }
+}
