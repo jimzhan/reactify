@@ -1,5 +1,5 @@
 import assert from 'assert'
-import http from '../../src/web/http'
+import http from '../../src/http'
 
 
 describe('http', () => {
