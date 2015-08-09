@@ -2,4 +2,4 @@
 
 Foundation toolkit for building modern webapps.
 
-[![Build Status][travis-image]][travis-url]
+[![Build Status](https://travis-ci.org/jimzhan/reflow.svg?branch=master)](https://travis-ci.org/jimzhan/reflow)
