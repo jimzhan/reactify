@@ -1,41 +1,38 @@
-require('whatwg-fetch')
+'use strict'
+import request from 'superagent'
 
 
-var execute = (url, options) => {
+var execute = (method, url, options) => {
   options = options || {
-    'Accept-Encoding': 'application/json'
+    headers: {
+      'credentials': 'same-origin',
+      'Accept-Encoding': 'application/json'
+    }
   }
-  options.credentials = 'same-origin'
-  return fetch(url, options)
-}
-
-
-class http {
-  static get(url, options) {
-    options = options || {}
-    options.method = 'get'
-    return execute(url, options)
-  }
-
-  static post(url, options) {
-    options = options || {}
-    options.method = 'post'
-    return execute(url, options)
-  }
-
-  static put(url, options) {
-    options = options || {}
-    options.method = 'put'
-    return execute(url, options)
-  }
-
-  static delete(url, options) {
-    options = options || {}
-    options.method = 'delete'
-    return execute(url, options)
-  }
+  return new Promise((resolve, reject) => {
+    request[method.toLowerCase()](options.url)
+      .set(options.headers)
+      .send(options.payload)
+      .end((err, res) => {
+        err ? reject(err) : resolve(res)
+      })
+  })
 }
 
 module.exports = {
-  'http': http
+  get: (url, options) => {
+    return execute('get', url, options)
+  },
+
+  post: (url, options) => {
+    return execute('post', url, options)
+  },
+
+  put: (url, options) => {
+    return execute('put', url, options)
+  },
+
+  delete: (url, options) => {
+    return execute('delete', url, options)
+  }
 }
