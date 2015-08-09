@@ -1,6 +1,5 @@
-# reflow
+# Reflow
 
-ES6 based Nodejs tool sets
-==========================
+Foundation toolkit for building modern webapps.
 
-## Modules
+[![Build Status][travis-image]][travis-url]
