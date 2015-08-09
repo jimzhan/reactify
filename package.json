@@ -1,14 +1,14 @@
 {
-  "name": "reflow",
+  "name": "reactify",
   "version": "0.1.0",
-  "description": "node.js tool sets",
+  "description": "foundations for react webapps",
   "main": "package.json",
   "scripts": {
     "test": "mocha --compilers js:babel/register test/**/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jimzhan/reflow.git"
+    "url": "git+https://github.com/jimzhan/reactify.git"
   },
   "keywords": [
     "nodejs",
@@ -18,9 +18,9 @@
   "author": "Jim Zhan <jim.zhan@me.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/jimzhan/reflow/issues"
+    "url": "https://github.com/jimzhan/reactify/issues"
   },
-  "homepage": "https://github.com/jimzhan/reflow#readme",
+  "homepage": "https://github.com/jimzhan/reactify#readme",
   "devDependencies": {
     "babel": "^5.8.21",
     "gulp": "*",
