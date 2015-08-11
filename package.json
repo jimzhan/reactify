@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/jimzhan/reactify#readme",
   "devDependencies": {
-    "babel": "^5.8.21",
+    "babel": "*",
     "gulp": "*",
     "mocha": "*"
   },
